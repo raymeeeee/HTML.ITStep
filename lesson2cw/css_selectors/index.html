@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *, html, body {
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            background: linear-gradient(to right, blue, pink);
+        }
+        #newsBlock1 {
+            border: 1px solid blue;
+        }
+        #newsBlock2 {
+            border: 1px solid red;
+        }
+        .newsBlockClass{
+            background-color: black;
+            color: white;
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #newsBlock1 > p {
+            color: red;
+        }
+        [href]{
+            text-decoration: none;
+            font-size: 20px;
+            color: crimson;
+        }
+        #newsBlock1, #newsBlock2{
+            height: 150px;
+        }
+        #newsBlock1 p {
+            border: 5px solid yellow;
+        }
+        #newsBlock1:hover{
+            background-color: white;
+        }
+        .mainParagraph::first-line{
+            background-color: crimson;
+            font-size: large;
+        }
+        .headerClass{
+            background-color: black;
+            color: white;
+            height: 150px;
+            text-align: center;
+        }
+        .footerClass{
+            background-color: black;
+            color: white;
+            height: 150px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="headerClass">
+        <h1>Logo</h1>
+        <a href="./about.html">about</a>
+    </header>
+    <p class="mainParagraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Eum fugit quae nobis voluptate adipisci aperiam dolorum obcaecati ab eos laudantium, assumenda illum repellat animi facilis quidem magni fuga eius incidunt.</p>
+    <div id="newsBlock1" class="newsBlockClass">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium eaque ea laborum aspernatur,
+            repellendus inventore architecto incidunt quidem obcaecati dolores consequatur id commodi quisquam maxime,
+            nisi nobis porro? Culpa, molestiae.</p>
+    </div>
+    <div id="newsBlock2" class="newsBlockClass">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam dolore ipsam, aut facilis esse doloremque delectus.
+            Iste aliquid non, debitis quaerat impedit asperiores ex magnam inventore! Id explicabo magni voluptatibus.</p>
+    </div>
+    <footer class="footerClass">
+        ©Academy step
+    </footer>
+</body>
+</html>

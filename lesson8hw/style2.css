@@ -1,0 +1,85 @@
+*, html, body {
+    padding: 0;
+    margin: 0;
+}
+
+.fs1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   height: 200px;
+   flex-wrap: wrap;
+   flex-direction: column;
+   border: 0;
+}
+
+.newString {
+    width: 100%;
+    height: 0;
+    border: 0;
+}
+
+hr {
+    width: 100%;
+    border: 0;
+}
+
+.fs2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    column-gap: 0;
+    border: 0;
+}
+
+.fs2 > .fs2div > input {
+    padding: 20px;
+    border: 2px solid mediumslateblue;
+    box-shadow: 1px 1px 2px black, 0 0 2px blue, 0 0 5px darkblue;
+    
+    width: 20%;
+}
+
+.fs2div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    column-gap: 489px;
+    width: 62.5%;
+    row-gap: 20px;
+    
+    margin: 20px;
+        
+    padding-bottom: 0;
+}
+
+
+.fs2 > .fs2div > select {
+    
+    border: 2px solid mediumslateblue;
+    box-shadow: 1px 1px 2px black, 0 0 2px blue, 0 0 5px darkblue;
+    
+    width: 24.49%;
+    padding-right: 30px;
+}
+
+.fs2 > textarea {
+
+    padding: 20px;
+    border: 2px solid mediumslateblue;
+    box-shadow: 1px 1px 2px black, 0 0 2px blue, 0 0 5px darkblue;
+    margin: 20px;
+    width: 60%;
+}
+
+#bttnSend {
+    border: 2px solid black;
+    color: white;
+    background-color: blueviolet;
+    padding: 10px;
+    font-size: 16px;
+    width: 100px;
+    
+}

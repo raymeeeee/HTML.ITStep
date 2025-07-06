@@ -1,0 +1,52 @@
+*,html,body {
+    margin: 0;
+    padding: 0;
+}
+
+.registerForm {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.fsForm {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 10px;
+}
+
+.fsForm > input {
+    height: 25px;
+    font-size: large;
+    font-weight: 700;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px;
+}
+
+.fsForm > label {
+    background-color: whitesmoke;
+
+}
+.fsForm > label::after {
+    content: "*";
+    
+}
+
+.fsForm > textarea {
+    resize: none;
+    width: 200px;
+    height: 100px;
+}
+
+.bttnCont {
+    text-align: center;
+}
+
+#bttnSend {
+    height: 25px;
+    width: 20%;
+    background-color: crimson;
+    margin: 10px;
+}

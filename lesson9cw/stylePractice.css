@@ -1,0 +1,42 @@
+*, html, body {
+    padding: 0;
+    margin: 0;
+}   
+
+.gridContainer {
+    display: grid;
+    background-color: blue;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding: 15px;
+    height: 100vh   ;
+}
+
+.box {
+    background-color: skyblue;
+    text-align: center;
+    align-content: center;
+    font-size: 25px;
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    
+}
+
+.item2 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.item3 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.item5 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+}

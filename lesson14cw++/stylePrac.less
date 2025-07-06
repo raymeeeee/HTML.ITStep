@@ -1,0 +1,74 @@
+@boxSize: 250px;
+@c1: white;
+@c2: black;
+*, html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #eec232;
+}
+
+.main {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 99.6vh;
+    flex-direction: column;
+    .row1 {
+        display: flex;
+        justify-content: center;
+        align-items:flex-end;
+    }
+    .row2 {
+        display: flex;
+        justify-content: center;
+        align-items:flex-start;
+    }
+    .box {
+        height: @boxSize;
+        width: @boxSize;
+        border-radius: 20px;
+        margin: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+           opacity: 0;
+           color: white;
+           font-size: 30px;
+           font-weight: 600;
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    }
+}
+
+.box:hover {
+    transition-duration: 0.425s;
+    background-color: rgb(102, 0, 255);
+    height: 320px;
+    width: 320px;
+    p {
+        transition-duration: 0.8s;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+.box:not(hover) {
+    transition-duration: 0.425s;
+    p {
+        transition-duration: 0.8s;
+        opacity: 0;
+        visibility: visible;
+    }
+}
+
+.item1 {background-color: @c1;}
+.item2 {background-color: @c2;}
+.item3 {background-color: @c1;}
+.item4 {background-color: @c2;}
+.item5 {background-color: @c2;}
+.item6 {background-color: @c1;}
+.item7 {background-color: @c2;}
+.item8 {background-color: @c1;}

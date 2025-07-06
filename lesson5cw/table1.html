@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table1</title>
+    <style>
+        table {
+            border: 1px solid red;
+            border-collapse: collapse;
+        }
+        tr,th,td {
+            border: 1px solid red;
+            text-align: center;
+        }
+        th {
+            background: linear-gradient(red, yellow);;
+        }
+        td {
+            background: linear-gradient(yellow, green);
+            font-family: 'Times New Roman', Times, serif;
+            color: blueviolet;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Mo</th>
+                <th>Tu</th>
+                <th>We</th>
+                <th>Th</th>
+                <th>Fr</th>
+                <th>Sa</th>
+                <th>Su</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Eggs</td>
+                <td>Mushrooms</td>
+                <td>Bread</td>
+                <td>Sausages</td>
+                <td>Cheese</td>
+                <td>Milk</td>
+                <td>Yogurt</td>
+            </tr>
+            <tr>
+                <td>Yogurt</td>
+                <td>Eggs</td>
+                <td>Mushrooms</td>
+                <td>Bread</td>
+                <td>Sausages</td>
+                <td>Cheese</td>
+                <td>Milk</td>
+                
+            </tr>
+            <tr>
+                <td colspan="2">Milk</td>
+                
+                <td>Eggs</td>
+                <td>Mushrooms</td>
+                <td>Bread</td>
+                <td>Sausages</td>
+                <td>Cheese</td>
+                
+            </tr>
+            <tr>
+                <td rowspan="2">Cheese</td>
+                <td>Milk</td>
+                <td>Yogurt</td>
+                <td>Eggs</td>
+                <td>Mushrooms</td>
+                <td rowspan="2" colspan="2">Bread</td>
+                
+                
+            </tr>
+            <tr>
+                
+                <td>Cheese</td>
+                <td>Milk</td>
+                <td>Yogurt</td>
+                <td>Eggs</td>
+                
+               
+                
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

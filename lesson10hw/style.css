@@ -1,0 +1,44 @@
+*,html,body{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.main {
+    
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px ;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+    /* grid-template-areas: 
+    'b b b b w w w w w w'
+    'b b b b w w w w w w'
+    'w w w w w w w w w w'
+    'w w w w w w w w w w'
+    'w w w w w w w w w w'
+    'w w w w w w w w w w'
+    'w w w w w w w w w w'
+    'w w w w w w w w w w'
+    'w w w w w w w w w w'
+    'w w w w w w w w w w'
+    'w w w w w w w w w w'
+    'w w w w w w w w w w'
+    'w w w w w w w w w w'
+    'w w w w w w w w w w'
+    'w w w w w w w w w w'; хотел через темлейт area сделать но что то не получилось*/
+    
+    border: 1px solid black;
+}
+
+.box {
+    border: 1px solid black;
+}
+
+.blue {
+    background-color: blue;
+}

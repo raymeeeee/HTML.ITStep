@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Homework</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .main {
+            background-image: url(./bg1.jpg);
+            height: 100vh;
+        }
+        .icon {
+            height: 80px;
+            width: 80px;
+        }
+        .iconHeader {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5px;
+            font-size: 20px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            margin-bottom: 100px;
+        }
+        .symbols {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 50px;
+            font-weight: 500;
+            margin-top: 20px;
+            
+        }
+        .welcome {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 36px;
+            font-weight: 500;
+        }
+        
+        
+        .content:hover {
+            transition-duration: 0.7s;
+            background-color:rgb(8, 8, 238, 0.8);   
+            border-radius: 100px;
+        }
+       
+        .content:not(hover) {
+            transition-duration: 0.5s;
+            background-color:rgb(8, 8, 238, 0.5);
+            border-radius: 40px;
+        }
+        .applying {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 24px;
+            font-weight: 500;
+        }
+        .selector {
+            display: flex;
+            justify-content: center;
+           
+            margin-bottom: 20px;
+        }
+        select, button {
+            width: 220px; 
+            border: none;
+            border-radius: 8px;
+            padding: 6px;
+        }
+        
+        #button:hover {
+            transition-duration: 0.7s;
+            background-color:rgba(164, 225, 40, 0.8);  
+        }
+        #button:not(hover) {
+            transition-duration: 0.5s;
+            background-color: rgba(40, 200, 85, 0.6);
+            color: white;
+        }
+        #button:active {
+            transition-duration: 0.2s;
+            background-color: rgba(13, 180, 116, 0.8);
+            color: white;
+        }
+        .footer {
+            background-color: rgb(38, 38, 250, 0.86);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid main">
+       
+        <div class="row">
+            <div class="col-3">
+                <div class="iconHeader">
+                    <img class="icon" src="./png2.png" alt="">
+                    <p>Chinese visa application</p>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="iconHeader">
+                    <img class="icon" src="./png1.png" alt="">
+                    <p>CH.VISA</p>
+                </div>  
+            </div>
+        </div>
+        <div class="content">
+            <div class="row">
+                <div class="col-12 symbols">
+                    <p>こんにちはおはようございますありがとう</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 welcome text-uppercase">
+                    <p>Welcome to chinese visa application service center</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 applying">
+                    <p>I`m applying from</p>
+                </div>
+            </div>
+            <div class="row justify-content-center " >
+                <div class="col-3 selector" >
+                    <select>
+                        <option selected>Select Country/Region</option>
+                        <option value="">Ukraine</option>
+                        <option value="">Japan</option>
+                    </select>
+                </div>
+                <div class="col-3 selector">
+                    <select>
+                        <option selected>Select city</option>
+                        <option value="">Kiev</option>
+                        <option value="">Kharkiv</option>
+                    </select>
+                </div>
+                <div class="col-3 selector">
+                    <button id="button" type="button">Take Me to the Website</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 footer fixed-bottom text-uppercase">
+                <p>Copyright ©2023CVASC, all rights reserved</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

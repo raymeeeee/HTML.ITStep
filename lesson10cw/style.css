@@ -1,0 +1,78 @@
+    *, html, body {
+        margin: 0;
+        padding: 0;
+    }
+
+.containerGrid {
+    display: grid;
+    height: 100vh; 
+    grid-template-areas: 
+    'h h h h h'
+    'b1 b2 b2 b2 b5'
+    'b1 b3 b3 b3 b5'
+    'b1 b4 b4 b4 b5'
+    'b1 b6 b6 b6 b5'
+    'f f f f f';
+    grid-gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .containerGrid {
+        height: 100vh;   
+        display: grid;
+        grid-template-areas: 
+        'h h h'
+        'b2 b2 b2'
+        'b3 b3 b3'
+        'b4 b4 b4'
+        'b6 b6 b6'
+        'f f f';
+        grid-gap: 10px;
+    }
+    .box1 {
+        display: none;
+    }
+    .box5 {
+        display: none;
+    }
+}   
+    
+
+.header {
+    grid-area: h;
+    background-color: blue;
+
+}
+
+.footer {
+    grid-area: f;
+    background-color: blue;
+    
+}
+
+.header, .footer{
+    color: white;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    
+}
+
+.box {
+    border: 1px solid red;
+    padding: 20px;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+.box1 {grid-area: b1;background-color: maroon;}
+.box2 {grid-area: b2;background-color: cornflowerblue;}
+.box3 {grid-area: b3;background-color: darkblue;}
+.box4 {grid-area: b4;background-color: skyblue;}
+.box5 {grid-area: b5;background-color: darkviolet;}
+.box6 {grid-area: b6;background-color: dodgerblue;}

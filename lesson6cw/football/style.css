@@ -1,0 +1,73 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("./img/background.jpg");
+    background-size: cover;
+}
+
+.gimn {
+    position: fixed;
+    z-index: 1;
+}
+
+#dateid {
+    float: right;
+    margin-left: 25px;
+}
+
+.messi {
+    width: 500px;
+    height: 500px;
+    position: fixed;
+    top: 0%;
+    animation-name: messi-anim;
+    animation-duration: 2s;
+    animation-delay: 0.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+.messi > img {
+    width: 50%;
+    height: 50%;
+}
+
+@-webkit-keyframes messi-anim {
+    0% {top: 0%;}
+    25% {top: 20%;}
+    50% {top: 40%;}
+    75% {top: 60%;}
+    100% {top: 80%;}
+}
+
+.ball {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    
+}
+@-webkit-keyframes ball-anim {
+    0% {left: 0%; rotate: 0deg;}
+    25% {left: 25%;}
+    50% {left: 50%;}
+    75% {left: 75%;}
+    100% {left: 95%; rotate: 360deg;}
+}
+.ball > img {
+    width: 5%;
+    height: 5%;
+    position: relative;
+    left: 0%;
+    top: 0%;
+    animation-name: ball-anim;
+    animation-duration: 2s;
+    animation-delay: 0.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}

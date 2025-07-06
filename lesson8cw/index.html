@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Flex Forms</title>
+</head>
+<body>
+    <h1>Register Page</h1>
+    <form class="registerForm">
+        <fieldset class="fsForm">
+        <legend>Contact Info</legend>
+        <label for="name">Name:</label>
+        <input type="text" required>
+        <label for="password">Password:</label>
+        <input type="password">
+        <label for="photo">Avatar:</label>
+        <input type="file">
+        <label for="service">Service:</label>
+        <input type="checkbox">
+        <label for="service2">Service2:</label>
+        <input type="radio">
+        <label for="gender">Gender</label>
+        <select name="gender">
+            <option>Male</option>
+            <option>Female</option>
+        </select>
+        <label for="fav_color">Favorite color: </label>
+        <input type="color">
+        <label for="birthdate">Birthdate:</label>
+        <input type="date">
+        <label for="email">Email:</label>
+        <input type="email">
+        <label for="phone">Phone:</label>
+        <input type="tel"
+        placeholder="+380(__)-___-__-__" pattern="\+380\(\d{2}\)-\d{3}-\d{2}-\d{2}"
+        required>
+        <label for="description">Description: </label>
+        <textarea cols="20" rows="30"></textarea>
+        <div class="bttnCont">
+        <button type="submit" id="bttnSend">send</button>
+        </div>
+        </fieldset>
+    </form>
+</body>
+</html>

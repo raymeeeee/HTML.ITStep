@@ -1,0 +1,268 @@
+@test_border: none;
+@bgcolor: rgba(98, 202, 250, 0.447);
+.main_content_1 {
+    background-color: @bgcolor;
+    border: @test_border;
+
+    .bgimg {
+
+        border: @test_border;
+
+        background-image: url("./student.jpg");
+        background-position:center;
+        background-size: 100%;
+
+        
+        height: 70%;
+        width: 85%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 5%;
+
+        border-radius: 60px;
+
+        .block_1 {
+            color: white;
+            width: 40%;
+           
+        }
+        .block_1 > h1 {
+            margin: 50% 0 30px 0;
+        }
+        .block_2 {
+            background-color: white;
+            padding: 5% 3% 5% 3%;
+            width: 30%;
+            border-radius: 60px;
+            form {
+                display: flex;
+
+                justify-content: space-between;
+                flex-direction: column;
+                align-items: center;
+
+                .form-group {
+                    width: 100%;
+                    margin: 10px 0 10px 0;
+                }
+            }
+            form > h2 {
+                font-size: 22px;
+                width: 70%;
+            }
+            form > button {
+                width: 100%;
+                padding: 6%;
+                margin: 20px 0 0px 0;
+            }
+        }
+
+
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 100vh;
+}
+
+
+
+.main_content_2 {
+    background-color: @bgcolor;
+    border: @test_border;
+
+    .buttonplay > img {
+        rotate: 90deg;
+        width: 30px;
+        height: 30px;
+    }
+    .buttonplay {
+        background-color: white;
+        padding: 15px;
+        border-radius: 50%;
+       
+    }
+    .starsrating > img {
+        width: 30px;
+        height: 30px;
+    }
+    .starsrating {
+        background-color: rgba(128, 128, 128, 0.684);
+        padding: 15px;
+        border-radius: 30px;
+       
+    }
+    height: 100vh;  
+    display: flex;
+    flex-direction: column;
+
+   
+    .main_group_1 {
+        border: @test_border;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 75%;
+        gap: 10%;
+    }
+
+    .block_3 {
+
+        border: @test_border;
+
+        background-image: url("./video.jpg");
+        background-position:center;
+        background-size: 100%;
+        border-radius: 60px;
+        width: 50%;
+        height: 100px;
+
+        color: white;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        gap: 20px;
+        padding: 20px;  
+
+
+
+    }
+    .text_group_1 {
+        border: @test_border;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 25%;
+    }
+    .block_4     {
+        background-color: white;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 60px;
+        height: 50%;
+        gap: 30px;
+        .bar {
+            height: 1px;
+            width: 200px;
+            border: 8px solid orangered;
+            border-radius: 15px;
+        }
+        .group_1 {
+            border: @test_border;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .textrating {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+        }
+        .textrating > h1 {
+            font-size: 60px;
+        }
+        .group_2 {
+            border: @test_border;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 50%;
+        }
+        .group_2 > div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+        }
+    }
+    
+}
+
+.main_content_3 {
+
+    background-color: @bgcolor;
+    border: @test_border;
+
+    height: 200vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10%;
+    .text_group_2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .blocks {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        .block {
+            border-radius: 30px;
+            background-color: white;
+            width: 18%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+            .level {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                font-size: large;
+                height: 100px;
+                width: 90%;
+                border-radius: 30px;
+                margin-top: 10px;
+            }
+            .inside_block {
+                background-color: aliceblue;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                flex-wrap: wrap;
+                border-radius: 30px;
+                padding: 10px;
+            }
+            .inside_block > div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                height: 100px;
+                width: 100px;
+                background-color: rgb(56, 79, 183);
+                border-radius: 30px;
+            }
+            
+        }
+        .block > button {
+            width: 80%;
+            margin-bottom: 6px;
+        }
+    }
+}

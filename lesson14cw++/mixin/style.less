@@ -1,0 +1,36 @@
+@block_size: 300px;
+@block_color: crimson;
+*, html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.item(@block_color) {
+    background-color: @block_color;
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 5px;
+    height: @block_size;
+    width: @block_size;
+    margin: 10px;
+}
+
+.item1 {.item(red);}
+.item2 {.item(rgb(255, 89, 0));}
+.item3 {.item(rgb(255, 234, 0));}
+.item4 {.item(rgb(174, 255, 0));}
+.item5 {.item(rgb(0, 255, 102));}
+.item6 {.item(rgb(0, 170, 255));}
+.item7 {.item(rgb(76, 0, 255));}
+.item8 {.item(rgb(238, 0, 255));}
+
+.block:hover {
+    transition-duration: 0.5s;
+    background-color: black;
+}
+.block:not(hover) {
+    transition-duration: 0.5s;
+}

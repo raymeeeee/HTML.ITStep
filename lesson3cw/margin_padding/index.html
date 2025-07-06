@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marging Padding</title>
+    <style>
+        *, html, body {
+            margin: 0;
+            padding: 0;
+        }
+        .box1 {
+            display: inline-block;
+            height: 250px;
+            width: 500px;
+            border: 1px solid black;
+            padding: 20px;
+            margin: 10px;
+        }
+        .box1 > img {
+            height: 100%;
+            width: 100%;
+        }
+
+
+        .box2 {
+            display: inline-block;
+            height: 250px;
+            width: 500px;
+            border: 1px solid black;
+            padding: 20px;
+            margin: 10px;
+            
+        }
+        .box2 > img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .boxS {
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            border: 2px solid black;
+            height: 250px;
+            width: 250px;
+            background-color: blue;
+            
+        }
+        .inBoxS {
+            height: 75px;
+            width: 75px;
+            background-color: brown;
+            /* (250px/2)-(75px/2) */
+            margin-top: 87.5px; 
+            margin-left: 87.5px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="boxS">
+        <div class="inBoxS"></div>
+    </div>
+    
+    <div class="box1"><img src="./1.avif" alt=""></div>
+    <!---->
+    <div class="box2"><img src="./2.jpg" alt=""></div>
+</body>
+</html>

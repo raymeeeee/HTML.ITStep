@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        tr,th,td {
+            border: 1px solid black;
+        }
+        th {
+            color: white;
+            background-color: black;
+            border-color: blue;
+            padding: 7px;
+        }
+        td {
+            color: white;
+            background-color: black;
+            border-color: red;
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>name</th>
+                <th>email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Bob</td>
+                <td>Bob@gmail.com</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Mike</td>
+                <td>Mike@gmail.com</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>David</td>
+                <td>David@gmail.com</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td>id end</td>
+            <td>name end</td>
+            <td>email end</td>
+        </tfoot>
+    </table>
+</body>
+</html>

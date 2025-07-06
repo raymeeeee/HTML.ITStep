@@ -1,0 +1,50 @@
+@specialColor: crimson;
+@itemHeight: 250px;
+@itemWidth: 250px;
+
+@headerHeight: 75px;
+@logoBg: rgb(220, 140, 20);
+*, html, body {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.header {
+    height: @headerHeight;
+    background-color: @logoBg;
+    .logo {
+        font-size: 30px;
+    }
+}
+.main {display: flex;}
+.item1 {
+    background-color: @specialColor;
+    height: @itemHeight;
+    width: @itemWidth;
+    margin: 10px;
+}
+.item2 {
+    background-color: rgb(220, 20, 123);
+    height: @itemHeight;
+    width: @itemWidth;
+    margin: 10px;
+}
+.item3 {
+    background-color: rgb(170, 20, 220);
+    height: @itemHeight;
+    width: @itemWidth;
+    margin: 10px;
+}
+.item4 {
+    background-color: rgb(93, 20, 220);
+    height: @itemHeight;
+    width: @itemWidth;
+    margin: 10px;
+}
+.item5 {
+    background-color: rgb(63, 20, 220);
+    height: @itemHeight;
+    width: @itemWidth;
+    margin: 10px;
+}

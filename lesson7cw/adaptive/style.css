@@ -1,0 +1,125 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color:darkslategray;
+    /* border: 2px solid black; */
+    height: 100%;
+    width: 100%-30px;
+    padding: 30px;
+}
+
+.header > ul {
+    /* border: 2px solid black; */
+    text-align: center;
+    margin: 25px;
+}
+
+.header > ul > li {
+    list-style-type: none;
+    display: inline;
+
+}
+
+/* .header > ul > li::after {
+    content: " | ";
+    color: white;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.header > ul > li::before {
+    content: " | ";
+    color: white;
+    font-size: 30px;
+    font-weight: 800;
+} */
+
+.header > ul > li > a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px 10px 10px 10px;
+    /* border: 2px solid black; */
+    padding: 5px;
+    background-color: black;
+}
+
+.products { 
+    width: 60%;
+    /* border: 2px solid black; */
+    background-color:cadetblue;
+    float: left;
+}
+
+.product {
+    display: inline-block;
+    width: 40%;
+    height: 20vh;
+    text-align: center;
+    margin: 10px;
+    /* border: 2px solid black; */
+}
+
+.product > img{
+    height: 70%;
+    width: 70%;
+    float: right;
+    margin: 5px;
+}
+
+.navNews {
+    display: inline-block;
+    background-color: cornflowerblue;
+    /* border: 2px solid black; */
+    width: 38%; 
+    
+    margin-left: 20px;
+    padding: 5px;
+}
+ 
+@media screen and (max-width: 800px){
+    .products {
+        display: inline-block;
+        width: 100%;
+        
+        text-align: center;
+    }
+    .header > ul > li {
+        list-style-type: none;
+        display: block;
+    
+    }
+    .header {
+        background-color: darkgoldenrod;
+        /* border: 2px solid black; */
+        height: 100%;
+        width: 100%-100px;
+        padding: 100px;
+    }     
+    .navNews {
+        display: none;
+    }
+}
+
+
+
+.footer{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    /* border: 2px solid black; */
+    padding: 3px;
+    background-color: darkcyan;
+    padding: 10px;
+    float: right;
+}

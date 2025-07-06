@@ -1,0 +1,72 @@
+.form {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    
+}
+
+.f {
+    border: none;
+}
+
+.f1 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.field1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 600px;
+}
+
+.f2 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.field2 {
+    display: flex;
+    justify-content: center;
+    align-content: start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 600px;
+}
+
+.f3 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.field3 {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    width: 600px;
+}
+
+.field2 > textarea{
+    resize: none;
+}
+
+
+.field1 > input {
+    width: 200px;
+}
+
+#bttnSend {
+    width: 100px;
+    margin: 10px;
+}
+
+

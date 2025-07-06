@@ -1,0 +1,85 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+html {
+  background-color: #eec232;
+}
+.main {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 99.6vh;
+  flex-direction: column;
+}
+.main .row1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.main .row2 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.main .box {
+  height: 250px;
+  width: 250px;
+  border-radius: 20px;
+  margin: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .box p {
+  opacity: 0;
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.box:hover {
+  transition-duration: 0.425s;
+  background-color: #6600ff;
+  height: 320px;
+  width: 320px;
+}
+.box:hover p {
+  transition-duration: 0.8s;
+  opacity: 1;
+  visibility: visible;
+}
+.box:not(hover) {
+  transition-duration: 0.425s;
+}
+.box:not(hover) p {
+  transition-duration: 0.8s;
+  opacity: 0;
+  visibility: visible;
+}
+.item1 {
+  background-color: white;
+}
+.item2 {
+  background-color: black;
+}
+.item3 {
+  background-color: white;
+}
+.item4 {
+  background-color: black;
+}
+.item5 {
+  background-color: black;
+}
+.item6 {
+  background-color: white;
+}
+.item7 {
+  background-color: black;
+}
+.item8 {
+  background-color: white;
+}

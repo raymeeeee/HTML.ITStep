@@ -1,0 +1,69 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.mainGrid {
+    display: grid;
+    height: 99.6vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-flow: row;
+    border: 1px solid white;
+}
+
+.mainBox {
+    background-color: maroon;
+    height: 100%;
+    border: 1px solid white;
+}
+
+.subBox1 {
+    background-color: blue;
+    height: 100%;
+    border: 1px solid white;
+}
+.subBox2 {
+    background-color: yellowgreen;
+    height: 100%;
+    border: 1px solid white;
+}
+.subBox3 {
+    background-color: darkorange;
+    height: 100%;
+    border: 1px solid white;
+}
+.subBox4 {
+    background-color:darkblue;
+    height: 100%;
+    border: 1px solid white;
+}
+
+.subGrid1 {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border: 1px solid white;
+}
+.subGrid2 {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border: 1px solid white;
+}
+.subGrid3 {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border: 1px solid white;
+}
+.subGrid4 {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border: 1px solid white;
+}

@@ -1,0 +1,189 @@
+.header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 4px;
+}
+.header > button {
+  border: none;
+  border-radius: 50%;
+  padding: 4px;
+  background-color: #248a8a;
+  width: 40px;
+  height: 40px;
+}
+.header > button:active {
+  background-color: #167373;
+}
+.header > button > img {
+  width: 20px;
+  height: 20px;
+}
+.arrow1 > img {
+  rotate: 180deg;
+}
+.header > input {
+  width: 80%;
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+  background-color: #167373;
+  color: white;
+}
+.header > input::placeholder {
+  color: white;
+}
+.header > .user {
+  background-color: blue;
+  color: white;
+}
+.bookmarks > button > img {
+  width: 20px;
+  height: 20px;
+  background-color: #167373;
+}
+.bookmarks > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2px;
+  padding: 2px;
+  border-radius: 30px;
+}
+.bookmarks {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 6px;
+  border-bottom: 1px solid black;
+}
+.buttons {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 6px;
+  column-gap: 14px;
+}
+.buttons > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttons > button > img {
+  width: 20px;
+  height: 20px;
+}
+.buttons > button {
+  border-radius: 50%;
+  padding: 6px;
+  width: 40px;
+  height: 40px;
+}
+.buttons > .user {
+  background-color: blue;
+  color: white;
+}
+.buttons > a {
+  text-decoration: none;
+}
+.content {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.logo {
+  display: flex;
+  height: 200px;
+  font-size: 90px;
+  margin: 0;
+  padding: 10px;
+  font-weight: 500;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.input > input {
+  width: 400px;
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+  background-color: #ffffff;
+}
+.input > input::placeholder {
+  color: black;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 6px;
+}
+.button > button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  color: white;
+  background-color: gray;
+}
+.buttonCustomize {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.buttonCustomize > button > img {
+  width: 20px;
+  height: 20px;
+}
+.buttonCustomize > button {
+  border-radius: 50%;
+  padding: 6px;
+  width: 40px;
+  height: 40px;
+}
+.container {
+  background-color: white;
+  width: 330px;
+  height: 400px;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  float: right;
+  position: absolute;
+  right: 1px;
+  gap: 20px;
+  border-radius: 30px;
+}
+.container > .content {
+  width: 40%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container > .content > img {
+  height: 60px;
+  width: 60px;
+}
+.content > a {
+  text-decoration: none;
+}
+.content > .userBar {
+  background-color: blue;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttons > #click:active .scrollbar {
+  visibility: hidden;
+}

@@ -1,0 +1,60 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    height: 100vh;
+    width: 20%;
+    background-color: blue;
+    position: absolute;
+    right: 97%;
+}
+.menu:hover {
+    animation-name: menu-anim;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    right: 80%;
+    
+}
+
+@-webkit-keyframes menu-anim {
+    from {right: 97%;}
+    tp {right: 80%;} 
+
+}
+
+.menu:not(:hover) {
+    animation-name: menu-anim-back;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    right: 97%;
+    
+}
+
+
+@-webkit-keyframes menu-anim-back {
+    from {right: 80%;}
+    tp {right: 97%;} 
+
+}
+
+.inMenu {
+    text-align: center;
+}
+
+.inMenu > li {
+    list-style-type: none;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.inMenu > li::before {
+    content: '|';
+}
+.inMenu > li::after {
+    content: '|';
+}

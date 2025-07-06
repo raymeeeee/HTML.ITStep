@@ -1,0 +1,164 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  nav {
+    background-color: #444;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  /* Медиазапросы */
+  @media screen and (max-width: 600px) {
+    header {
+      font-size: 1.5em;
+    }
+  
+    nav ul li {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    section {
+      padding: 10px;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    header {
+      font-size: 2em;
+    }
+  
+    nav ul li {
+      margin: 0 20px;
+    }
+  }
+  
+  
+  /* Стили для экранов с шириной менее 600px */
+  @media screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+  
+  /* Стили для экранов с шириной от 601px до 900px */
+  @media screen and (min-width: 601px) and (max-width: 900px) {
+    body {
+      background-color: lightgreen;
+    }
+  }
+  
+  /* Стили для печати */
+  @media print {
+    body {
+      background-color: white;
+    }
+  }
+  
+  /* Стили для экранов в портретной ориентации */
+  @media screen and (orientation: portrait) {
+    body {
+      background-color: lightcoral;
+    }
+  }
+  
+  /* Стили для экранов в альбомной ориентации */
+  @media screen and (orientation: landscape) {
+    body {
+      background-color: lightsalmon;
+    }
+  }
+  
+  /* Стили для экранов с пиксельной плотностью от 1 до 1.5 */
+  @media screen and (min-resolution: 1dppx) and (max-resolution: 1.5dppx) {
+    body {
+      font-size: 16px;
+    }
+  }
+  
+  /* Стили для экранов с пиксельной плотностью больше 1.5 */
+  @media screen and (min-resolution: 1.5dppx) {
+    body {
+      font-size: 20px;
+    }
+  }
+  
+  /* Стили для устройств с цветовым профилем sRGB */
+  @media screen and (color-gamut: srgb) {
+    body {
+      color: black;
+    }
+  }
+  
+  /* Стили для устройств с цветовым профилем Display P3 */
+  @media screen and (color-gamut: p3) {
+    body {
+      color: white;
+    }
+  }
+  
+  /* Стили для устройств с поддержкой гироскопа */
+  @media (hover: hover) and (pointer: fine) and (device-orientation: portrait) {
+    body {
+      transform: rotate(90deg);
+    }
+  }
+  
+  /* Стили для устройств с поддержкой вибрации */
+  @media (pointer: coarse) and (prefers-reduced-motion: no-preference) {
+    body {
+      animation: shake 0.5s infinite;
+    }
+  }
+  
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+  }

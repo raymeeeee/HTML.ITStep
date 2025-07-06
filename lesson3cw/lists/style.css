@@ -1,0 +1,29 @@
+/* *, html, body {
+    margin: 0;
+    padding: 0;
+} */
+
+.listPlanets {
+    border: 1px solid black;
+}
+
+.listPlanets > li {
+    list-style-type: none;
+}
+
+.listPlanets > li > img {
+    display: inline;
+    width: 20px;
+    height: 15px;
+    margin: 3px;
+}
+
+.listLinks {
+    border: 1px solid black;
+}
+
+.listLinks > li {
+    /* list-style-type: none; */
+    font-size: 18px;
+    /* display: inline; */
+}

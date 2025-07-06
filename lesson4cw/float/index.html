@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+        .box{
+            border: 1px solid black;
+            background-color: darkgrey;
+            color: white;
+            font-size: large;
+            font-weight: 700;
+            font-family: sans-serif;
+            width: 50%;
+            height: 1000px;
+            padding: 50px;
+        }
+        .box > img {
+            float: right;
+        }
+        .block {
+            width: 1000px;
+            height: 1000px;
+            border: 3px dotted black;
+        }
+        .block >img {
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"><img src="./1.jpg" alt="img">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Placeat id assumenda sapiente tenetur consequatur similique ab sunt?
+        Corporis, facere nobis? Laudantium et ex, rerum quibusdam qui iure sint vitae eligendi?</p></div>
+
+    <div class="block">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, consequuntur veritatis quo dignissimos eveniet illo,
+        vel magnam neque quasi culpa magni fugiat. Vitae ut mollitia earum voluptate harum, pariatur amet.</p>
+    </div>
+</body>
+</html>

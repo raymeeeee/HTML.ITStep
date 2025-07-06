@@ -1,0 +1,123 @@
+<!-- <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Плавное переливание текста</title>
+    <style>
+       @keyframes FadeIn { 
+  0% {
+    opacity: 0;
+    transform: scale(.1);
+  }
+
+  85% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.myClass img {
+  float: left;
+  margin: 20px;
+  animation: FadeIn 1s linear;
+  animation-fill-mode: both;
+}
+
+.myClass img:nth-child(1) { animation-delay: .5s }
+.myClass img:nth-child(2) { animation-delay: 1s }
+.myClass img:nth-child(3) { animation-delay: 1.5s }
+.myClass img:nth-child(4) { animation-delay: 2s }
+    </style>  
+</head>
+<body>
+    <div class="myClass">
+        <img src="http://placehold.it/200x150" />
+        <img src="http://placehold.it/200x150" />
+        <img src="http://placehold.it/200x150" />
+        <img src="http://placehold.it/200x150" />
+    </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Плавное переливание текста</title>
+    <script>
+        
+    </script>
+    <style>
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #a77a2c;
+            font-size: 30px;
+            font-family: Arial, sans-serif;
+        }       
+
+
+@keyframes fadeInOut {
+    from {
+        color: white;
+        
+    }
+    to {
+        color: black;
+        
+    }
+
+}
+.text-container span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    
+    color: white;
+    animation: fadeInOut 5.5s alternate infinite;
+    animation-timing-function:ease;
+    
+}
+
+.text-container .s { animation-delay: .5s }
+.text-container .c { animation-delay: 1s }
+.text-container .a { animation-delay: 1.5s }
+.text-container .r { animation-delay: 2s }
+.text-container .l { animation-delay: 2.5s }
+.text-container .e { animation-delay: 3s }
+.text-container .t { animation-delay: 3.5s }
+.text-container .ee { animation-delay: 4s }
+.text-container .aa { animation-delay: 4.5s }
+.text-container .rr { animation-delay: 5s }
+.text-container .ss { animation-delay: 5.5s }
+
+
+    </style>  
+</head>
+<body>
+    <div class="text-container">
+        <span class="s">S</span>
+        <span class="c">C</span>
+        <span class="a">A</span>
+        <span class="r">R</span>
+        <span class="l">L</span>
+        <span class="e">E</span>
+        <span class="t">T</span>
+        <span class="ee">E</span>
+        <span class="aa">A</span>
+        <span class="rr">R</span>
+        <span class="ss">S</span>
+    </div>
+</body>
+</html>

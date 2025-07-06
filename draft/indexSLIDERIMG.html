@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #C79B9D;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            flex-direction: column;
+        }
+
+        .block {
+            width: 500px;
+            
+            overflow-y: hidden;
+           
+            
+            scroll-snap-type: x mandatory;
+            
+            /* border: 1px solid black; */
+            display: flex;
+            
+        }
+      
+
+        ::-webkit-scrollbar {
+            background: transparent;
+            height: 30px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1F0001;
+            border-radius: 12px;
+            
+        }
+        .block img {
+            scroll-snap-align: start;
+        }
+
+        .text {
+           
+            display: flex;
+            position: absolute;
+            padding-top: 500px;
+            z-index: -1;
+            color: #752729;
+            font-size: 34px;
+            font-weight: 700;
+            font-family: "Bebas Neue", sans-serif;
+            letter-spacing: 20px;
+            width: 500px;
+            justify-content: space-evenly;
+            align-items: center;
+            
+        }
+        .text p {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="block">
+        <img src="./image-removebg-preview (1).png" alt="" draggable="false"> 
+        <img src="./image-removebg-preview.png" alt="" draggable="false">
+    </div>
+    <div class="text">
+        <p style="width: 50%">BACK</p>
+        <p style="width: 50%">FRONT</p>
+    </div>
+
+</body>
+</html>
